@@ -1,4 +1,9 @@
+#include <string.h>
 #include <ifaddrs.h>
+#include <net/if.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+
 #include "tcpip_adapter.h"
 
 int getifaddrs(struct ifaddrs **ifap) {
