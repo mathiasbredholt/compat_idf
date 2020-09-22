@@ -27,4 +27,3 @@ const char *gai_strerror(int);
 #ifndef PF_UNIX
 #define PF_UNIX AF_UNIX
 #endif
-

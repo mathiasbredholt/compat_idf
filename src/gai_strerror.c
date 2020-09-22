@@ -2,22 +2,22 @@
 #include "lwip/netdb.h"
 
 const char *gai_strerror(int errnum) {
-    switch (errnum) {
+  switch (errnum) {
     case 0:
-        return "no error";
+      return "no error";
     case EAI_NONAME:
-        return "name or service is not known";
+      return "name or service is not known";
     case EAI_FAIL:
-        return "non-recoverable failure in name resolution";
+      return "non-recoverable failure in name resolution";
     case EAI_FAMILY:
-        return "ai_family not supported";
+      return "ai_family not supported";
     case EAI_SERVICE:
-        return "service not supported for ai_socktype";
+      return "service not supported for ai_socktype";
     case EAI_MEMORY:
-        return "memory allocation failure";
+      return "memory allocation failure";
     case EAI_SYSTEM:
-        return "system failure";
+      return "system failure";
     default:
-        return "unknown/invalid error";
-    }
+      return "unknown/invalid error";
+  }
 }
